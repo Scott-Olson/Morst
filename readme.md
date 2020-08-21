@@ -23,4 +23,6 @@ This project is to practice and learn Rust. It will be built on Amethyst, a data
 
 
 
+I used some of the functionality from the crate [Morse](https://docs.rs/morse/0.1.0/morse/), but chose to write it out myself rather than just use the crate as a whole. 
+
 *alt names -> Rumorse, Morst, Rorse* 
