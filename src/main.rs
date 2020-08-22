@@ -1,83 +1,15 @@
-use std::io;
-use TranslationError;
-
-#[#[derive(Debug)]]
-pub struct MorseTable {
-    'a' => "·−",
-    'b' => "−···",
-    'c' => "−·−·",
-    'd' => "−··",
-    'e' => "·",
-    'f' => "··−·",
-    'g' => "−−·",
-    'h' => "····",
-    'i' => "··",
-    'j' => "·−−−",
-    'k' => "−·−",
-    'l' => "·−··",
-    'm' => "−−",
-    'n' => "−·",
-    'o' => "−−−",
-    'p' => "·−−·",
-    'q' => "−−·−",
-    'r' => "·−·",
-    's' => "···",
-    't' => "−",
-    'u' => "··−",
-    'v' => "···−",
-    'w' => "·−−",
-    'x' => "−··−",
-    'y' => "−·−−",
-    'z' => "−−··",
-    '0' => "_____",
-    '1' => ".____",
-    '2' => "..___",
-    '3' => "...__",
-    '4' => "...._",
-    '5' => ".....",
-    '6' => "_....",
-    '7' => "__...",
-    '8' => "___..",
-    '9' => "____.",
-    '.' => "._._._",
-    ',' => "__..__",
-    '?' => "..__..",
-    '\'' => ".____.",
-    '!' => "_._.__",
-    '/' => "_.._.",
-    '(' => "_.__.",
-    ')' => "_.__._",
-    '&' => "._...",
-    ':' => "___...",
-    ';' => "_._._.",
-    '=' => "_..._",
-    '+' => "._._.",
-    '-' => "_...._",
-    '_' => "..__._",
-    '"' => "._.._.",
-    '$' => "..._.._",
-    '@' => ".__._.",
-    ' ' => "/",
-}
-
-pub fn char_encode(c: char) {
-    println!(" * In char translate * ");
-    println!(" * char -> {} * ", c);
-}
-
-pub fn str_encode<S: Into<String>>(s: String) -> Result<String, TranslationError>{
-    let text = input
-}
-
-
+// use std::io;
+use mors::{decoder, encoder};
 
 fn main() {
     println!(" -=-=-=-=-=-=- Main Loop -=-=-=-=-=-=- ");
-    let mut c = 'c';
-    let mut s = "test"
+    let s = String::from("test").to_uppercase();
 
-    c = char_translate(c);
-    s = str_encode(s);
+    let morse_encoder = encoder::Encoder::new();
+    let result_encode = morse_encoder.encode_letters(s);
+
+    let decoder = decoder::Decoder::new();
+    let message = String::from(". - --- -.-");
+    let result_decode = decoder.decode_message(message);
+    println!("Encode: {0}, Decode: {1} ", result_encode, result_decode);
 }
-
-

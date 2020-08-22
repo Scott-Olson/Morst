@@ -7,5 +7,4 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-beep = "0.2.1"
-dimensioned = "0.6.0"
+mors = "0.1.1" 
