@@ -1,0 +1,4 @@
+(
+  title: "Rust Morse",
+  dimensions: Some((800, 600)),
+)
