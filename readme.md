@@ -1,15 +1,17 @@
 # RustMorse
 RustMorse is a translator, trainer, and game for learning morse code.
 
-This project is to practice and learn Rust. It will be built on Amethyst, a data-oriented game engine written in Rust. Amethyst is a very powerful solution for generating a GUI, a bit overpowered for my use case. But presents a fun challenge and a useful tool for future projects.
+This project is to practice and learn Rust. Originally this was going to be built on Amethyst game engine, but I have chosen to make it a website and API instead. I chose to use the Rust web framework Rocket for this. 
 
 ![](https://www.rust-lang.org/logos/rust-logo-32x32.png) 
 <img src="https://rocket.rs/images/logo-boxed.png" width="32">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="45">
 
 
 ## To Do List
 - [x] Translate single char keyboard input into dotdash
 - [x] Multi char translate
+- [ ] Create a React front end
 - [ ] ~~Setup Amethyst basic interface~~
 - [ ] Playback dotdash into audio
 - [ ] Paste bulk translate
@@ -17,7 +19,7 @@ This project is to practice and learn Rust. It will be built on Amethyst, a data
 
 
 ## Future Features
-- Virtual Keyboard
+- Virtual Keyboard 
 - File translate (upload .txt into dotdash)
 - Morse tree visualization
 
