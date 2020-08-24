@@ -1,5 +1,5 @@
-# RustMorse
-RustMorse is a translator, trainer, and game for learning morse code.
+# Morst
+Morst is a translator, trainer, and game for learning morse code.
 
 This project is to practice and learn Rust. Originally this was going to be built on Amethyst game engine, but I have chosen to make it a website and API instead. I chose to use the Rust web framework Rocket for this. 
 
