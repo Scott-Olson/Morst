@@ -11,7 +11,7 @@ This project is to practice and learn Rust. Originally this was going to be buil
 ## To Do List
 - [x] Translate single char keyboard input into dotdash
 - [x] Multi char translate
-- [ ] Create a React front end
+- [ ] Create a Yew front end
 - [ ] ~~Setup Amethyst basic interface~~
 - [ ] Playback dotdash into audio
 - [ ] Paste bulk translate
