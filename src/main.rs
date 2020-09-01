@@ -1,10 +1,9 @@
 #![feature(proc_macro_hygiene, decl_macro)]
-#[macro_use]
-extern crate rocket;
 use mors::{decoder, encoder};
+use rocket::*;
 
 #[get("/")]
-fn index() -> &'static str {
+fn index() -> String {
     let encoder = encoder::Encoder::new();
     let decoder = decoder::Decoder::new();
     let s = String::from("morst").to_uppercase();
@@ -13,7 +12,10 @@ fn index() -> &'static str {
 
     let message = String::from("-- --- .-. ... -");
     let result_decode = decoder.decode_message(message);
-    "Encode: {result_encode}, Decode: {result_decode}"
+
+    println!("Encode: {0}, Decode: {1} ", result_encode, result_decode);
+
+    format!("Hello {}, {}", result_decode, result_encode)
 }
 
 fn main() {
