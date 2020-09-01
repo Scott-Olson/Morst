@@ -1,11 +1,11 @@
 # Morst
 Morst is a translator, trainer, and game for learning morse code.
 
-This project is to practice and learn Rust. Originally this was going to be built on Amethyst game engine, but I have chosen to make it a website and API instead. I chose to use the Rust web framework Rocket for this. 
+This project is to practice and learn Rust. Originally this was going to be built on Amethyst game engine, but I have chosen to make it a website and API instead. I chose to use the Rust web framework Rocket for this. The front end will be
 
 ![](https://www.rust-lang.org/logos/rust-logo-32x32.png) 
 <img src="https://rocket.rs/images/logo-boxed.png" width="32">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="45">
+
 
 
 ## To Do List
